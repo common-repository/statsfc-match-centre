@@ -1,0 +1,195 @@
+div.sfc_matchcentre > * {
+    margin-bottom: 1.5em;
+}
+
+div.sfc_matchcentre table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto !important;
+    border: none;
+}
+
+div.sfc_matchcentre table th,
+div.sfc_matchcentre table td {
+    border: none;
+}
+
+div.sfc_matchcentre table.sfc_summary td.sfc_badge {
+    width: 10%;
+}
+
+div.sfc_matchcentre table.sfc_summary td.sfc_badge img {
+    max-width: 100%;
+    border: none;
+}
+
+div.sfc_matchcentre table.sfc_summary td.sfc_team {
+    width: 25%;
+    font-size: large;
+}
+
+div.sfc_matchcentre table.sfc_summary td.sfc_score {
+    width: 10%;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.sfc_matchcentre table.sfc_summary td.sfc_status {
+    width: 10%;
+    font-size: small;
+    text-align: center;
+}
+
+div.sfc_matchcentre table.sfc_summary td.sfc_home {
+    text-align: left;
+}
+
+div.sfc_matchcentre table.sfc_summary td.sfc_away {
+    text-align: right;
+}
+
+div.sfc_matchcentre table.sfc_players {
+    font-size: small;
+}
+
+div.sfc_matchcentre table.sfc_players thead th {
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+div.sfc_matchcentre table.sfc_players tbody td.sfc_home {
+    text-align: left;
+}
+
+div.sfc_matchcentre table.sfc_players tbody td.sfc_away {
+    text-align: right;
+}
+
+div.sfc_matchcentre .sfc_timelines > div {
+    position: relative;
+    width: calc(100% - 16px);
+    height: 22px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+div.sfc_matchcentre .sfc_timelines .sfc_timeline:before {
+    content: '';
+    display: block;
+    width: calc(100% + 16px);
+    height: 22px;
+    margin-left: -8px;
+    background: #F0F0F0;
+}
+
+div.sfc_matchcentre .sfc_timelines .sfc_timeline .sfc_event {
+    position: absolute;
+    top: 0;
+}
+
+div.sfc_matchcentre .sfc_timelines .sfc_timeline .sfc_event.sfc_sub {
+    z-index: 2;
+}
+
+div.sfc_matchcentre .sfc_timelines .sfc_timeline .sfc_event.sfc_card {
+    z-index: 3;
+}
+
+div.sfc_matchcentre .sfc_timelines .sfc_timeline .sfc_event.sfc_goal {
+    z-index: 4;
+}
+
+div.sfc_matchcentre .sfc_timelines .sfc_annotations {
+    height: 14px;
+    z-index: 1;
+}
+
+div.sfc_matchcentre .sfc_timelines .sfc_annotations .sfc_annotation {
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    position: absolute;
+    bottom: 0;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+}
+
+div.sfc_matchcentre .sfc_timelines .sfc_annotations .sfc_annotation:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 22px;
+    position: absolute;
+    top: -22px;
+    left: calc(50% - 0.5px);
+    background: #FFFFFF;
+}
+
+div.sfc_matchcentre .sfc_timelines .sfc_annotations .sfc_annotation:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 22px;
+    position: absolute;
+    bottom: -22px;
+    left: calc(50% - 0.5px);
+    background: #FFFFFF;
+}
+
+div.sfc_matchcentre .sfc_event {
+    display: inline-block;
+    width: 16px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div.sfc_matchcentre .sfc_event.sfc_goal {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABI1BMVEUAAAAAAAAAAAAEBAQAAAChoaE9PT0+Pj4AAAAAAAAAAABAQEAAAABZWVkAAAABAQHOzs6qqqoAAABmZmZeXl4AAAAAAADDw8N4eHhhYWEAAACtra2Hh4dra2uenp6Li4uWlpZLS0uAgIBUVFQAAAAhISE/Pz9QUFBFRUUCAgIVFRUAAAAjIyP///8AAADz8/OoqKj9/f3t7e3k5OT19fXLy8vBwcG5ubmurq6fn5+ZmZlOTk739/fw8PDh4eG8vLy3t7crKysJCQkEBAT7+/vc3NzW1tbU1NTIyMixsbFnZ2cwMDAcHBzp6enQ0NC1tbWzs7OkpKSKiop+fn51dXVXV1dTU1NKSkokJCTm5ubX19fR0dHDw8OTk5NGRkY7OzsWFhb8i3tfAAAALXRSTlMAEgdALP57Zw/iq6WVk3wq/u/vq6umaf7+/vHw8PDh4eDg36unpqWUk3tmZkAWWRYuAAABf0lEQVQ4y81S13aCUBBMxN57eu/lLggqCAoo9hpbND3//xW53HuOoNF354Hdwwyc3dnZ2TbsMulUKs3sbqCdoQsw0TkPOdfQDneMfQWCQi3mdqzy3mStmB9NfwHKQzXXzCW8K98neyWRR0goHPQQQvxeM7H8D7fKallkgsuYz0zhJ2znI8cDF4uooETKCxzaJw1WoI0QZQRScgBB2/4+gFmGCqRPUlQDfJYfDODhi4TIz7sF3GWlOQCzEDxhgaELVYSGFdwqub7cb3SNx4XgGgAmTckljYGgwuGJxUlgIbjpwDd+lREUKiibG2d1S+DJK3VkQiQ83Yhveawho1HqAtuhxzD7moux1jwV6ojgiwg+iBNntrPf8XlqQ2ssc2LLtJvXQ3arj+rEwAZHzRCrmnISWTpWY19+r/JyFhG4cDIels991QVj1n6jfHEK4HesBMYPGBwVjDDv/Re5cBxbqJXYkqqV42HHutAGfQqnDyT58t65KfbPnsCtB8d+y/AHXcZSr71EAxQAAAAASUVORK5CYII=);
+}
+
+div.sfc_matchcentre .sfc_event.sfc_goal.sfc_penalty {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAA/1BMVEUAAAAAAAAAAAABAQEAAAAFBQUAAAAAAABAQEBXV1c9PT0/Pz+np6erq6sAAAAAAABaWloAAAAAAAAAAAAAAAAAAAAAAAABAQGHh4cAAAAAAABmZmYZGRlhYWEAAABra2uenp6Li4uWlpZLS0uBgYEhISFEREQCAgIAAAAAAAD///8AAAC5ubnk5OSgoKD39/f09PTy8vLt7e3Dw8PW1tbR0dHNzc3IyMi9vb2ysrKurq6ZmZnh4eFOTk4rKysJCQn7+/vv7+/c3NypqammpqaioqJ2dnZnZ2dWVlZISEgwMDAcHBzo6Oi1tbV9fX1QUFAkJCSUlJSNjY07OzsWFhbqeSJsAAAAKnRSTlMAfxBAB2Es4aWTe2f+8O+vq6umn5V8aCr4z7+rQP7x8OHh4ODfppN7UCA9kDnYAAABoElEQVQ4y82S13LiMBSGhWxMLyGUtO1dv2yMOzaETgikbXn/Z1lZzoA97GZv97uQzsz5ZqTzS+Sf5CAonH57QThVvjZQp38XcmJtIP+ykKyEKt1Wq6vQY+ECCiFa6QNitu9LWvYO+QbOiVquDTaQGPNaWc1McZ6jtDnv2z82v4Dr1cj3vUuaOYKozbsZtxjTjVd3jDHL9i/VjFAeDQKTxVSZxPjZSQu9s3tjkHQWM7kN8VpLCe0JbljCUJebD7SlkL8QEdECcMsSQltuI6BwyEOBuHxfNuynnSGqfvgEKHuhCwHXp4wtJ6Iae27kurtU/C0Aaz9chQ+QTKpiIr4u7oVPW9zGQ+hjSORxJj8IFXvssBgOiZzIGlYOl/S8JAVzmzxGXM9XV3uBvtUdJvkuBTcuvXepZy9Z9nNMD9GCD6vxCbxEDvRqjgzQWUot4NNg/KZHUpTddeRMrch8fqpH4AtJozZ3Iu0bPen3N8CJSjLQEwiWiXAm+kffXO3URYTBwJyNgut6RyXHaO3C44Lfh9HHzxr5M/SqUixWFEr+L34DfV9RyjxD8QgAAAAASUVORK5CYII=);
+}
+
+div.sfc_matchcentre .sfc_event.sfc_goal.sfc_own-goal {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAA1VBMVEUAAAD8DRv8Eh78DRv8DRv9r7D8WVv8DRv8P0P8QUX8DRv8XF/8DRv8DRv8Qkb8DRv9q6v8DRv9kZL8Z2n8DRv8Ex/8YmX9ra79iIn8bG79n6D8TVD8DRv9goT8Ji38QUX8Rkn////8DRv/8vL9qKn+5eX+1tb+wsP9uLj/9fX/7e79urv9mZr8UFP/+Pj+zc7+ycn9o6P9oKH8LzX+4eH9s7T8Ex/+29v+0dL9eHn8aWv8WFr8ISn+6en+vr/9i4z9fX/8SU38NTr8KS/8S0/8PkL8HCWUqHlyAAAAIXRSTlMAEUArB/6UfHtn8KurpqWV7+Lhq2lm/vDw8OHg4N+mpZO3AV0NAAABYUlEQVQ4y82S13KDMBREY0wxjntJb7qI3jHg3pP8/ydFJWNwe/d5kWZ2EXvL3a1REQbN5kCoXJGr8itQRj25ekEWax1tDoxk3KmJZ6/fjwNzPf8lD8RpFIX9ysn390vNdRDSk4clQsgxo/7xG7VUc21EwYiR/ChH+Z6sWOMK5mcG9XLSdg4zxMl0dkQA7VLCLsA34kgmO1KAbpFToNUHTDD3i4SEsaU9gHAwDIFg6cSCc3Lzw4k3MRYwPBiaADCNpFjaACOnSd1p62D42MGWhtd9bhjRim2rMKimbyCKy3RekZOpRcgw5NVrOz4Meh/HQlHmi24ghscME3oNe6VxyI7534WNh60M0z9YcrnVjwZroIF5M1y08p+rR8Mypp4ROJ6NGDEpRzkZ9wJgO9O5HswBGuLJwjSAgLlhTfSzxRSVOkC+0jQtdUd1Rby0tO03H1sW9t6/qlfXXm19qmTtb4w/59g8ZPjlLvcAAAAASUVORK5CYII=);
+}
+
+div.sfc_matchcentre .sfc_event.sfc_card.sfc_first-yellow {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAIVBMVEUAAACFhgCJiQuIigOOkA6Ojgz//wCdngCRkgDd3QDc3QD2UV24AAAABnRSTlMArA2/bGqDNrgbAAAAN0lEQVQoz2OgFlARBAMnGJ/JohwMmhWgAqydaWAwIwAqwFgGEUgXGBUgIIAWhCsCMAIZIxqoBAApaExvjHaokQAAAABJRU5ErkJggg==);
+}
+
+div.sfc_matchcentre .sfc_event.sfc_card.sfc_second-yellow {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAS1BMVEUAAACGAACFhQCJTQaIIQCOjw2OCgKJGQKKRQGIigOKAACFewD/AAD//wCgAACdngCeAACtUwCTAACRkgDgAADOlwHd3QCblQCOJwA3lBoPAAAADHRSTlMArawN5Gtrz8+/v7BIHhdwAAAAVUlEQVQ4y2MYJICZlQkKuDlYWNgZYYCNGSrPKcwPAeISQgJIQIgLooJVWIwXAkSFRHiQgIgQG1gBEz8vFAjy8aAAPsZRBaMKSFJAMMkRTLQEk/3gAADklx53m09TYwAAAABJRU5ErkJggg==);
+}
+
+div.sfc_matchcentre .sfc_event.sfc_card.sfc_red {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAG1BMVEUAAACFAACODg6JFBSIAwP/AACdAACRAADdAABDGNC3AAAABXRSTlMArGsNv28kVJ0AAAA1SURBVCjPY6AWMBIEA2UYn9k9DQxKDKACTBWhYNCuABVgTIUIhAmMChAUwAxCzEDGjAbKAQCV8ECNKC5c5gAAAABJRU5ErkJggg==);
+}
+
+div.sfc_matchcentre .sfc_event.sfc_sub {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABMlBMVEUAAACnkHtJjUnBAiA/iz8EgAQCgALBByLBDyTBBCDBBCAEgQQZghnDKzcqhCo+ij7GSlHGR07EOUI5iDlXk1dCjELMa2/HTlTBAB9TkVPDKTYphSnCHy8ehB4IgQgPgQ8DgAMJgQnCFinCGivCHSwdgx3CGCkYghjCIC4ggyDCGSoaghkrhSvFQEjCHy7FQknFPETLZGhkmWTFPEQ8ijzCJDEkhCTHTVPIWF1rnGtvnm/JWF1Yk1gBgAHKYmZimGLBBSHCHi0egx7BEycTgRMVghXBEycTgRMthS27LTXFQkpCi0LDMTsxhjHBDCQMgQzDMTvCJjLEOkLBEycTgRMegx4hgyGaWUZgfkdJjknNcXRxnnHGSVDEO0PCFSgVghXGTVNNj03Nc3YAgADBAB8AgACeT7cHAAAAZHRSTlMAB2H4e/v29e7q4uLevLuMY11QUEZCKRwcGxAQCgr17+vp5dvT08jIvr6fn5KNfnx7dXVpaWNjSkQuKCQkGw4O/Pr6+fno1NS+ubKyp6elpZaNioqKgHxcW1hRUUI+PT01NTEgNE+LdgAAAVtJREFUOMt9kdV2g1AQRQeJN66NJ427SyV1d3ef+/+/UCAUuJBkP53Fnll3nQG0/NbWYSExkvHDIhIOQs5jc9c/WbeZEJIJzNSb90vkn+qy0QcFrbLvN3gToSnS74yTOp/k6b5HOu96bH5p/TOt0z0An/1W9auuqcg/DNLiutQhtF1iQIaVGph7jHio1ED++oInIFMTK+wFhbRhKqonKGFbTpdEoAPiAJsAhSZaQtNUFfwhA3q8iPWJlPgUIW4w4EHMjaQUyBPCgoE6orU1/U/uWQPMASJW5EOYCa+auDcCAm0UuJC/dUhZ8eECJw687QqeuwaZU/Iqp74V7XFguhwKZD3Kg+WdsbTuRERbv5FDCWcIFO4cfoCuDSm8oOGbfzpGGidoWWtZdN7yQw2MCjq/NQQdvqzWr7yDgXBF1Y0JzGIo1uBuPB9RmEP0DMVDLcJnReM63fcqAhr+AItsemcJDQUeAAAAAElFTkSuQmCC);
+}
+
+div.sfc_matchcentre .sfc_event.sfc_suboff {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAw1BMVEUAAADBAiDHTlTBByLBDyTBBCDBBCDDKzfGSlHEOULMa2/DKTbKYmbCHy/CGivCHSzFQknFPETLZGjCJDHGR07IWF3BAR/Uio3BBSHCHi3BEyfCFSjCGCrBEyfCHSzBEyfCIC7CIS/CJDHFQkrDMTvBDCTCGSrCGSrDMTvFQEjCJjLFQUnEOkLBEyfCHi3CIS/EO0PFPUbGSVDNcXTIVVrGRk3FQUnGSVDEO0PCFSjGTVPNc3bHTlTKYmbBAB/IVlvBAB9T/yOSAAAAQHRSTlMA+Bz17urivGNQKRAOCtvTfHt1Y19EGwf8+vno4tTJxr69tbKnpaKblo6NjIqKgHxqaFhRS0lGQj49NTElJCAH4pDO2QAAAMJJREFUOMvNkseSwjAQBeW1DV5jlgybyDnnnPr/vwpcBUVZmDnTlzm8rpE0GvV+HDsnMf+0iAlxrAGR+Ot8YQPGwNmGN/locedr5IWc/gc8lI0W50oE+V4GhUPK1Axzr1+hphlRpTOxg8bs+R1RwM6ME7cWrnoiY/mDOk8NX/h3woZRNvLXsv4FjJ4KIZ7N+yUN0BR+pVAE2kqgC1ZKEhxI5CQhC31PEpKYrpKokBbzOXUxd3+qBXF1I0Mp9lbJnXovLva5JxMXQ93ZAAAAAElFTkSuQmCC);
+}
+
+div.sfc_matchcentre .sfc_event.sfc_subon {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAwFBMVEUAAAAEgAQCgAI+ij5GjEZTkVMphSlimGJ7pXoIgQgPgQ8DgAMJgQkFgQUYghgdgx0ggyAshSxCi0I8ijw8ijxNj00khCQ8iTxDjENYk1hCjEJrnGtvnm9Yk1gBgAETghMegx4TgRMVghUCgAIdgx0TgRMdgx0TgRMthS0khCRCi0IxhjEMgQwaghkaghkxhjEmhCYTgRMegx4hgyFlmWVjmGNJjklxnnEzhzNVklUVghVNj00AgABBi0E4iDgAgAANkBCsAAAAP3RSTlMA+/aMYBsQDgf17+vp4d/Tvrt8e2ljY1FHREAuKCQbC/r56OPa1MnGvrWyp6Wim5aNioB8d3NYUU5LPTUgHgmC2dw/AAAAtklEQVQ4y83PxRKDUBBE0Q6QQNzd3d21//+vEqhKVV6AWXO2M724CKDHuglRhIkyJO0kOY/4zm+GrpFMXOHF3A34tQzDpZbij94FfyohqkZV5V6PUhXNq70TqqZPKE5UxAtQNbJ0pPelOMmsq6HoFGgFC+0+YyW4bOyEbg1AKzQOw23BjwPsB+MFDyuSQwv+8jFSh6CaJosQmDppQNLQmIPoyAxkM54hsjKdOmTbZBmye65iIojeNxkm/waUB/wAAAAASUVORK5CYII=);
+}
+
+div.sfc_matchcentre .tipso_style {
+    border-bottom: none !important;
+}
+
+div.sfc_matchcentre .sfc_footer {
+    display: block !important;
+    opacity: 1 !important;
+    text-align: right;
+    visibility: visible !important;
+}
